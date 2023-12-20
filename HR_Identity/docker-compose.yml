@@ -1,0 +1,16 @@
+version: '3.4'
+  
+services:
+
+  # ОСНОВНОЕ РЕШЕНИЕ
+  hr_identity:
+    image: hr_identity
+    build:
+      context: .
+      dockerfile: IdentityServer/Dockerfile
+    restart: always
+    ports:
+      - "86:80" 
+    networks:
+      - dev 
+  

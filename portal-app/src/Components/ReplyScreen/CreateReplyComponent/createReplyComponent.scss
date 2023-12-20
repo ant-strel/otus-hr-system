@@ -1,0 +1,74 @@
+@import "../../../Fonts.scss";
+@import "../../../Colors.scss";
+
+.createReply {
+
+    width: 100%;
+    height: 100%;
+
+    .error-text{
+        padding-top: 25px;
+        text-align: center;
+        color: $mainColor;
+    }
+    
+    .input-block{    
+        display: flex;
+        justify-content: space-around;
+        height: 110px !important;
+        width: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        flex-direction: column;
+        align-items: stretch;
+        margin: 0 25px;
+
+        .text-input {
+            height: 30px;
+            font-size: 18px;
+            padding-left: 10px;
+            border: none;
+            border-radius: 3px;
+            background: #e3e3e3;
+
+        }
+    }
+
+    .button-block{
+        display: flex;
+        flex-direction: row-reverse;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+    }
+    
+    .button-block > *{
+        margin: 5px;
+
+    }
+
+}
+
+
+.css-1oee5ei-DropDown{
+    background-color: $backgroundMenuButton !important;
+    background: $backgroundMenuButton !important;
+    color: $enterBackgroundWhite !important;
+}
+.css-z2hyoe-ItemComponent:hover{
+    background-color: $backgroundMenuButtonHover !important;
+    background: $backgroundMenuButtonHover !important;
+}
+
+.react-dropdown-select-item-selected{
+    background-color: $mainColor !important;
+    background: $mainColor !important;
+}
+.react-dropdown-select-item-selected:hover{
+    background-color: $hoverColor !important;
+}
+
+.css-wmy1p7-ReactDropdownSelect{
+    color: $backgroundMenuButton !important;
+}

@@ -1,0 +1,6 @@
+**/bin/
+**/obj/
+.vs/**/
+/Infrastructure.EntityFramework/obj/Debug/net6.0/Infrastructure.EntityFramework.AssemblyInfo.cs
+/Services.Impl/obj/Debug/net6.0/ref/Services.Impl.dll
+/Services.Impl/obj/Debug/net6.0/refint/Services.Impl.dll

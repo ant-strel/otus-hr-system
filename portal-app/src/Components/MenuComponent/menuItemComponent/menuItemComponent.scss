@@ -1,0 +1,52 @@
+@import '../../../Colors.scss';
+
+.menu-item {
+    color: white;
+    width: auto;
+    height: 42px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+    border-radius: 3px 0 0 3px;
+    margin-left: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    &.checked{
+        background-color: $activeColor;        
+    }
+
+    &.unchecked{
+        background-color: $backgroundMenuButton;  
+        &:hover{
+            background-color: $backgroundMenuButtonHover;  
+        }
+    }
+
+
+    .logo {
+        width: 30px;
+        height: 30px;
+        flex: 0 0 40px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &.vacancy{            
+            background-image: url(../../../Elements/Icons/Vacancy.png);
+        }
+
+        &.candidat{            
+            background-image: url(../../../Elements/Icons/Candidat.png);
+        }
+
+        &.reply{            
+            background-image: url(../../../Elements/Icons/Reply.png);
+        }
+    }
+
+    .text {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}

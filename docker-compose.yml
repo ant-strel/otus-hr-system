@@ -1,0 +1,9 @@
+version: '3.4'
+
+include:
+  - HR_System_Portal/docker-compose.yml
+  - RabbitMQ/docker-compose.yml
+  - HR_WorkFlow/docker-compose.yml
+  - HR_Identity/docker-compose.yml
+  - portal-app/docker-compose.yml
+   

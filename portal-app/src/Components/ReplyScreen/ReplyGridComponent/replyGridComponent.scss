@@ -1,0 +1,28 @@
+.actualStatus{
+        background: white;
+        width: 5px;
+        height: 5px;
+        box-shadow: 0px 0px 5px white;
+        border-radius: 7px;
+        margin-left: 30px;
+        &.not{
+            background: white;
+            box-shadow: 0px 0px 5px white;
+        }
+        &.actual{
+            background: green;
+            box-shadow: 0px 0px 5px green;
+        }
+        &.unactual{
+            background: red;
+            box-shadow: 0px 0px 5px red;
+        }
+        &.inwork{
+            background: green;
+            box-shadow: 0px 0px 5px green;
+        }
+        &.ended{
+            background: red;
+            box-shadow: 0px 0px 5px red;
+        }
+}

@@ -1,0 +1,35 @@
+version: '3.4'
+  
+networks:
+  dev:
+    driver: bridge   
+    
+services:
+
+  # ОСНОВНОЕ РЕШЕНИЕ
+  hr_portal_api:
+    image: hrportalapi
+    build:
+      context: .
+      dockerfile: HR_Portal_API/Dockerfile
+    restart: always
+    ports:
+      - "85:80" 
+    depends_on:
+      - postgres
+    networks:
+      - dev
+
+  # БАЗА ДАННЫХ
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: "hrdb"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "55432:5432"
+    restart: always
+    networks:
+     - dev

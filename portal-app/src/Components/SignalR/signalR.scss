@@ -1,0 +1,45 @@
+@import "../../Colors.scss";
+.info{
+    position: absolute;
+    bottom: 25px;
+    right: 0px;
+    height: 60px;
+    background: $mainColor;
+    transition: width 2s ease;
+    overflow: hidden;
+    .timer{
+        position: absolute;
+        padding-top: 30px;
+        width: 0px;
+        right: 0px;
+        height: 100%;
+        background-color: white;
+        opacity:0.1;
+        transition: width 6s ease;
+
+        &.hidetimer{
+            width: 0px;
+        }
+
+        &.showTimer{
+            width: 100%;
+        }
+    }
+    .textBox{
+        height: 100%;
+        text-align: center;
+        width: 350px;
+        margin-left: 5px;
+        margin-top: 17px;
+    } 
+
+    &.hideInfo{
+    transition: width 1s ease;
+        width: 0px;
+    }
+
+    &.showInfo{
+        transition: width 1s ease;
+        width: 350px;
+    }
+}

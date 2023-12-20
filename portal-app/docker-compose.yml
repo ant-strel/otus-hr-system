@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:  
+  portal-app:
+    container_name: portal-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:3000
+    stdin_open: true      
+    environment:
+      - REACT_APP_URL_PORTAL=http://localhost:85
+      - REACT_APP_URL_WF=http://localhost:7000
+      - REACT_APP_URL_IDENTITY=http://localhost:86

@@ -1,0 +1,46 @@
+@import '../../Colors.scss';
+@import '../../Fonts.scss';
+.leftSideMenu{
+    position: relative;
+    height: 100%;
+    flex:0 0 50px;
+
+
+    .menuExpander{
+        position: absolute;
+        z-index: 999;
+        background-color: $backgroundApp;
+        margin-top: 90px;
+        height: 100%;
+        width: 50px;
+        transition: all 0.4s, color 0.4s;
+        box-shadow: 5px 5px 5px $backgroundMenuButton;
+
+
+        .blockName{
+            color: $mainColor;
+            font-size: 12px;
+            margin-left: 9px;
+            font-family: InterBold;
+        }
+
+        .buttonBlock{ 
+            margin-top: 110px;
+
+            .sep{    
+                border: 1px solid;
+                border-color: rgba(255, 255, 255, 0.25);
+                border-radius: 5px 0 0 5px;
+                margin-left: 5px;
+                border-right: none;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                margin-top: 5px;
+        }
+        }
+
+        &:hover{
+            width: 170px;
+        }
+    }
+}

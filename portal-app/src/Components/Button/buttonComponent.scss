@@ -1,0 +1,23 @@
+@import '../../Colors.scss';
+@import '../../Fonts.scss';
+
+.defaultButton{
+    width: 120px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    border-radius: 3px;
+    background-color: $mainColor;
+
+    transition: all 0.4s, color 0.4s;
+    text-align: center;
+    font-family: Inter; 
+
+    &:hover{
+        background-color: $hoverColor;
+    }
+
+    &:active{
+        transition: all 0.4s, color 0.4s;
+        background-color: $activeColor;
+    }
+}

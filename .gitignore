@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/HR_Identity/.vs/HR_Identity/DesignTimeBuild
+/HR_Identity/.vs/HR_Identity/FileContentIndex
+/HR_Identity/.vs
+/HR_Identity/HR_Identity_API/obj
+/HR_Identity/IdentityServer/obj
+/HR_System_Portal/.vs
+/HR_Identity/IdentityServer/bin
+/HR_Identity/IdentityServer/MyDB.db-shm
+/HR_Identity/IdentityServer/MyDB.db-wal
+/HR_Identity/IdentityServer/MyDB.db
+/RabbitMQ/Infrastructure.Bus/obj
+/RabbitMQ/rabbitmq
+/RabbitMQ/Infrastructure.Bus/.vs/Infrastructure.Bus
+/RabbitMQ/Infrastructure.Bus/bin
